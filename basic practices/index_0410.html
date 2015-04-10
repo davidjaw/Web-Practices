@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+<title>RE Demo</title>
+<script>
+  var people = {
+    name: '',
+    age: '',
+    sex: '',
+    tall: '',
+    weight: ''
+  };
+  function validate() {
+    var testZone = document.getElementById("testZone");
+    for( var propety in people){
+      people[propety] = document.getElementById(propety).value;
+    }
+    var BMI = people.weight / ( people.tall * people.tall * 0.0001 );
+    var out;
+    if( people.sex == 'F'){ out = "Miss "} else { out = "Mr. "}
+    out = "<h1>" + out + people.name + "<br />Your BMI is " + BMI + "</h1>";
+    testZone.innerHTML = out;
+  }
+</script>
+</head>
+<body>
+<h1>BMI檢測</h1><br />
+  <pre>
+    Name:   <input type="text" size="20" id="name"> <br />
+    Age:    <input type="text" size="20" id="age"> <br />
+    Sex:    <input type="radio" size="20" id="sex" name="sex" value="M"> Male <input type="radio" name="sex" size="20" id="sex" value="F"> Female <br />
+    Tall:   <input type="text" size="20" id="tall"> <br />
+    Weight: <input type="text" size="20" id="weight"> <br />
+    <input type="button" value="Validate" onclick="validate()"><br / >
+  </pre>
+  <div>result:<br /> <span id="testZone"></span></div>
+</body>
+</html>
