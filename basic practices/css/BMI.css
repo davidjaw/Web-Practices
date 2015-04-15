@@ -1,0 +1,12 @@
+.inputBox {
+  text-align:left;
+  border:2px solid #a1a1a1;
+  padding:10px 10px 10px 30px;
+  background:#dddddd;
+  box-shadow: 10px 10px 5px #888888;
+  width:350px;
+  border-radius:30px;
+}
+.pill_right{
+  padding-left: 80px;
+}

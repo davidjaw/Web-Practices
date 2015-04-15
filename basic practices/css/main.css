@@ -1,0 +1,33 @@
+.navbar {
+  background: #67ACB3;
+  height: 50px;
+  width: 100%;
+  top: 0;
+}
+.container {
+  background: #0AABB0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: 100%;
+}
+.nav {
+  margin-top: 15px;
+  padding-left: 0;
+  box-sizing: border-box;
+  float: left;
+  position: absolute;
+	list-style: none;
+}
+.nav li {
+  border-left: 3px solid #555;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.nav li a{
+  padding: 0px 10px;
+  display: block;
+	text-decoration: none;
+}
+.myFont { font-family: Microsoft JhengHei; }
