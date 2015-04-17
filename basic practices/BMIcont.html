@@ -3,29 +3,44 @@
 <head>
   <meta charset="utf-8">
   <title>BMI檢測</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
   <link rel="stylesheet" type="text/css" href="css/BMI.css">
+  <script src="src/jquery-1.11.2.min.js"></script>
+  <script src="src/nav.js"></script>
   <script src="src/BMI_cont.js"></script>
 </head>
 <body>
+  <!-- navbar start -->
   <div class="navbar">
     <div class="container">
-      <ul class="nav">
+      <ul class="nav myFont">
         <li><a href="index2.html">首頁</a></li>
-        <li><a href="BMIcont.html">BMI檢測</a></li>
+        <li class="hidHost"><a href="#">Javascript Practices</a>
+          <ul class="hidNav">
+            <li><a href="BMIcont.html">BMI檢測</a></li>
+          </ul>
+        </li>
+        <li class="hidHost"><a href="#">CSS Practices</a>
+          <ul class="hidNav">
+            <li><a href="#">CSS範例( none )</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
+  </div><br />
+  <!-- navbar end -->
+  <div class="pill_down">
+    <div> <h1 class="myFont inputBox">BMI Web Demo</h1><br /> </div>
+    <div class="inputBox">
+      <pre class="myFont">
+        Name:      <input type="text" size="20" id="name"> <br />
+        Age:          <input type="text" size="20" id="age"> <br />
+        Sex:    <input type="radio" size="20" id="sex" name="sex" value="M"> Male <input type="radio" name="sex" size="20" id="sex" value="F"> Female <br />
+        Tall:            <input type="text" size="20" id="tall"> <br />
+        Weight:     <input type="text" size="20" id="weight"> <br />
+        <input type="button" value="Validate" class="myFont" onclick="BMI_cont()"><br / ></pre>
+    </div>
+    <div class="inputBox myFont"> result:<br /> <span id="testZone"></span> <br /></div>
   </div>
-  <div> <h1 class="myFont pill_right">BMI Web Demo</h1><br /> </div>
-  <div class="inputBox">
-    <pre class="myFont">
-      Name:      <input type="text" size="20" id="name"> <br />
-      Age:          <input type="text" size="20" id="age"> <br />
-      Sex:    <input type="radio" size="20" id="sex" name="sex" value="M"> Male <input type="radio" name="sex" size="20" id="sex" value="F"> Female <br />
-      Tall:            <input type="text" size="20" id="tall"> <br />
-      Weight:     <input type="text" size="20" id="weight"> <br />
-      <input type="button" value="Validate" class="myFont" onclick="BMI_cont()"><br / ></pre>
-  </div>
-  <div class="inputBox myFont pill_right"> result:<br /> <span id="testZone"></span> <br /></div>
 </body>
 </html>

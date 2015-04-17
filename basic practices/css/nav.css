@@ -3,6 +3,7 @@
   height: 50px;
   width: 100%;
   top: 0;
+  position: fixed;
 }
 .container {
   background: #0AABB0;
@@ -16,7 +17,7 @@
   padding-left: 0;
   box-sizing: border-box;
   float: left;
-  position: absolute;
+  position: relative;
 	list-style: none;
 }
 .nav li {
@@ -30,4 +31,21 @@
   display: block;
 	text-decoration: none;
 }
+.hidNav{
+  margin: 0;
+  padding: 5px 0;
+  list-style: none;
+  float: left;
+  position: absolute;
+  left: 0;
+  width: 500px;
+  display: none;
+  background: #0AABB0 no-repeat bottom;
+}
+.hidNav li {
+  border-right: 3px solid #555;
+}
+.hidNav a { display: inline; }
+.hidNav li a:hover { text-decoration: underline; }
 .myFont { font-family: Microsoft JhengHei; }
+
