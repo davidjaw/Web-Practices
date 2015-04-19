@@ -1,4 +1,4 @@
-.navbar {
+header {
   background: #67ACB3;
   height: 50px;
   width: 100%;
@@ -6,7 +6,6 @@
   position: fixed;
 }
 .container {
-  background: #0AABB0;
   margin-right: auto;
   margin-left: auto;
   width: 80%;
@@ -38,12 +37,19 @@
   float: left;
   position: absolute;
   left: 0;
-  width: 500px;
+  width: 100%;
   display: none;
-  background: #0AABB0 no-repeat bottom;
+  background: #00FFFF no-repeat bottom;
 }
-.hidNav li {
-  border-right: 3px solid #555;
+.hidNavLeftImg{
+  width: 50px;
+  height: 50px;
+  background: black;
+  float: left;
+}
+.pillLeft {
+  margin: 15px;
+  float: left;
 }
 .hidNav a { display: inline; }
 .hidNav li a:hover { text-decoration: underline; }
