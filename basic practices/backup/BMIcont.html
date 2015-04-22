@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BMI檢測</title>
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/BMI.css">
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/BMI_cont.js"></script>
+</head>
+<body>
+  <div class="pill_down inputBox">
+    <div> <h1 class="myFont">BMI Web Demo</h1><br /> </div>
+    <div>
+      <pre class="myFont">
+        Name:      <input type="text" size="20" id="name"> <br />
+        Age:          <input type="text" size="20" id="age"> <br />
+        Sex:    <input type="radio" size="20" id="sex" name="sex" value="M"> Male <input type="radio" name="sex" size="20" id="sex" value="F"> Female <br />
+        Tall:            <input type="text" size="20" id="tall"> <br />
+        Weight:     <input type="text" size="20" id="weight"> <br />
+        <input type="button" value="Validate" class="myFont" onclick="BMI_cont()"><br /></pre>
+    </div>
+  </div>
+  <div class="myFont inputBox"> result:<br /> <span id="testZone"></span> <br /></div>
+</body>
+</html>

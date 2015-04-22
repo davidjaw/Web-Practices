@@ -4,6 +4,7 @@ header {
   width: 100%;
   top: 0;
   position: fixed;
+  z-index: 99;
 }
 .container {
   margin-right: auto;

@@ -1,0 +1,81 @@
+﻿.body {
+  margin: 50px auto;
+  width: 500px;
+  height: 750px;
+  border-radius: 20px;
+  border:1px solid #000;
+  box-sizing: border-box;
+}
+body {
+  font-family: Microsoft JhengHei;
+  padding: 10px;
+  position: relative;
+}
+body h1 {
+  margin-top: 17px;
+  width: 95%;
+  margin-left: 40%;
+  display: block;
+}
+.innerBox, .row {
+  height: 100%;
+  white-space: nowrap;
+}
+.innerBox > div, .innerBox > h4 {
+  padding-left: 25px; 
+}
+.textInput > div {
+  height: 30px;
+  width: 90%;
+  margin: 10px 0;
+  padding-left: 0;
+}
+#searchStart, #searchEnd {
+  width: 90%;
+  height: 25px;
+  overflow: hidden;
+  padding-left: 27px;
+}
+#startDate, #startTime {
+  display: inline;
+  padding-left: 27px;
+  height: 25px;
+  margin-right: 25px;
+}
+.textInput div label {
+  height: 25px;
+  width: 25px;
+  margin-top: 2px;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-left: 3px;
+}
+.labelStart { background: url('/practice/img/start.png'); }
+.labelEnd { background: url('/practice/img/end.png'); }
+.stDate { background: url('/practice/img/date.png'); }
+.stTime { background: url('/practice/img/time.png'); }
+.innerBox div label div, .innerBox div div { padding-left: 0; }
+.checkBox {
+  white-space: normal;
+  font-size: 14px;
+}
+.select {  white-space: normal;}
+.others textarea {
+  height: 50px;
+  width: 95%;
+}
+.button{
+  border-radius: 20px;
+  font-family: Microsoft JhengHei;
+  border: 2px solid black;
+  background: #5555FF;
+  width: 100px;
+  height: 30px;
+  margin-left: 75%;
+}
+.dateMonster{
+  position: relative;
+  height: 30px;
+  white-space: nowrap;
+}
