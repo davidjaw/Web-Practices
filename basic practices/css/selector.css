@@ -1,7 +1,7 @@
 ﻿.body {
   margin: 50px auto;
   width: 500px;
-  height: 750px;
+  height: 500px;
   border-radius: 20px;
   border:1px solid #000;
   box-sizing: border-box;
@@ -9,7 +9,6 @@
 body {
   font-family: Microsoft JhengHei;
   padding: 10px;
-  position: relative;
 }
 body h1 {
   margin-top: 17px;
@@ -20,6 +19,7 @@ body h1 {
 .innerBox, .row {
   height: 100%;
   white-space: nowrap;
+  position: relative;
 }
 .innerBox > div, .innerBox > h4 {
   padding-left: 25px; 
@@ -36,12 +36,6 @@ body h1 {
   overflow: hidden;
   padding-left: 27px;
 }
-#startDate, #startTime {
-  display: inline;
-  padding-left: 27px;
-  height: 25px;
-  margin-right: 25px;
-}
 .textInput div label {
   height: 25px;
   width: 25px;
@@ -50,6 +44,25 @@ body h1 {
   background-position: center center;
   background-repeat: no-repeat;
   margin-left: 3px;
+}
+.pillRight { margin-left: 15px; }
+.dateMaster div {
+  width: 40%;
+  height: 31px;
+  float: left;
+  z-index: 98;  
+  height: 33px;
+  width: 200px;
+}
+.dateMaster div input {
+  width: 170px;
+  height: 26px;
+  padding-left: 26px;
+  margin-left: 27;
+}
+.radios label{
+  font-size: 15px;
+  padding-right: 20px;
 }
 .labelStart { background: url('/practice/img/start.png'); }
 .labelEnd { background: url('/practice/img/end.png'); }
@@ -69,13 +82,25 @@ body h1 {
   border-radius: 20px;
   font-family: Microsoft JhengHei;
   border: 2px solid black;
-  background: #5555FF;
   width: 100px;
   height: 30px;
-  margin-left: 75%;
+  margin-left: 100px;
+  cursor: pointer;
 }
 .dateMonster{
   position: relative;
   height: 30px;
   white-space: nowrap;
+}
+.select2-search{
+  display: none;
+}
+.fancybox {
+  margin-left: 23px;
+}
+#fancybox{
+  margin: 50px 350px;
+  width: 50%;
+  height: 100px;
+  font-size: 50px;
 }

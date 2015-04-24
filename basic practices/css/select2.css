@@ -226,7 +226,6 @@ html[dir="rtl"] .select2-container .select2-choice .select2-arrow b {
 }
 
 .select2-search {
-    display: inline-block;
     width: 100%;
     min-height: 26px;
     margin: 0;
