@@ -1,4 +1,5 @@
 $(function(){
+  $('#header').append(new EJS({url: 'template/header.ejs'}).render());
   $('.hidHost').hover( function(){
     var _this = $(this),
       _subnav = _this.children('ul');

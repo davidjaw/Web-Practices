@@ -19,6 +19,7 @@ header {
   float: left;
   position: relative;
 	list-style: none;
+  width: 100%
 }
 .nav li {
   border-left: 3px solid #555;
